@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 1em;
+    height: 100vh;
+}
+
+#map {
+    width: 100%;
+    height: calc(100vh - 56px);
+    z-index: 1;
+}
+
+#datesContainer { 
+    position: absolute;
+    top: 10px; left: 10px;
+    z-index: 1000; 
+    background-color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.left-sidebar {
+    height: auto;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    box-shadow: 5px 0px 5px 0px rgba(69, 67, 67, 0.6);
+    z-index: 1000;
+}
+
+.basic-functions {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+}
+
+.basic-functions .btns {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin: 1px;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.7);
+}
+
+.basic-functions .fas {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map-coordinate {
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 7px;
+    background-color: rgba(67, 69, 69, 0.3);
+    border-radius: 0px;
+    font-size: 1em;
+    padding: 5px 15px;
+}
+
+.boundaryName{
+    padding-top: 20px;
+    
+}
+
+.leaflet-control-layers-list {
+    line-height: 10px;
+}
+/* Estilo para el control personalizado del checkbox */
+.leaflet-control-layers {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    padding: 6px;
+}
+
+.leaflet-control-layers-selector {
+    margin-right: 6px;
+    margin-top: -2px;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
